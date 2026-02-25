@@ -13,14 +13,17 @@ int main(void)
 	c = 97;
 	C = 65;
 
-	while (c <= 122 && C <= 90)
+	while (c <= 122)
 	{
 		putchar(c);
 		c++;
+	}
+	while (C <= 90)
+	{
 		putchar(C);
 		C++;
 	}
-	putchar('\n');
+		putchar('\n');
 
 return (0);
 }
