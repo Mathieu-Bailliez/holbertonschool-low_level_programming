@@ -8,24 +8,15 @@
 
 int main(void)
 {
-	char c;
+        int c = 0;
 
-	c = 'a';
+        while (c < 10)
+        {
+                putchar(c + '0');
+                c++;
+        }
+        putchar('\n');
 
-	while (c <= 'z')
-	{
-		if (c == 'e' || c == 'q')
-		{
-			c++;
-			continue;
-		}
-		else
-		{
-			putchar (c);
-			c++;
-		}
-	}
-	putchar ('\n');
-
-	return (0);
+        return (0);
 }
+~              
