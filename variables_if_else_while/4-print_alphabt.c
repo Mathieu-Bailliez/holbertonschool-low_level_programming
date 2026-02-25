@@ -1,18 +1,19 @@
 #include <stdio.h>
 
 /**
- * Entry point
+ * main - Entry point
  *
- * Return Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
 	char c;
+
 	c = 'a';
 
 	while (c <= 'z')
-	{	
+	{
 		if (c == 'e'  || c == 'q')
 		{
 			c++;
