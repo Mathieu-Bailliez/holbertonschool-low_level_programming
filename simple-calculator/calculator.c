@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - ask user for 2 number a 1 operator
+ * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
-
 int main(void)
 {
-	int choice = -1;
+	int choice;
+
+	choice = -1;
 
 	printf("Simple Calculator\n");
 
