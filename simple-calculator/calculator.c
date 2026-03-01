@@ -8,29 +8,26 @@
 
 int main(void)
 {
-	int a;
-	int b;
-	char op;
+	int choice = -1;
 
-	printf("Premier nombre : ");
-	scanf("%d", &a);
+	printf("Simple Calculator\n");
 
-	printf("Operateur (+ - * /) : ");
-	scanf(" %c", &op);
+	while (choice != 0)
+	{
+		printf("1) Add\n");
+		printf("2) Subtract\n");
+		printf("3) Multiply\n");
+		printf("4) Divide\n");
+		printf("0) Quit\n");
+		printf("Choice: ");
 
-	printf("Deuxieme nombre : ");
-	scanf("%d", &b);
+		scanf("%d", &choice);
 
-	if (op == '+')
-		printf("Resultat : %d\n", a + b);
-	else if (op == '-')
-		printf("Resultat : %d\n", a - b);
-	else if (op == '*')
-		printf("Resultat : %d\n", a * b);
-	else if (op == '/')
-		printf("Resultat : %d\n", a / b);
-	else
-		printf("Operateur invalide\n");
+		if (choice == 0)
+		{
+			printf("Bye!\n");
+		}
+	}
 
 	return (0);
 }
