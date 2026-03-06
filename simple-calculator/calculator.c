@@ -9,11 +9,7 @@ int main(void)
 {
 	int choice;
 
-	choice = -1;
-
-	printf("Simple Calculator\n");
-
-	while (choice != 0)
+	while
 	{
 		printf("1) Add\n");
 		printf("2) Subtract\n");
@@ -27,6 +23,27 @@ int main(void)
 		if (choice == 0)
 		{
 			printf("Bye!\n");
+			break;
+		}
+		else if (choice == 1)
+		{
+			/* addition ici */
+		}
+		else if (choice == 2)
+		{
+			/* soustraction ici */
+		}
+		else if (choice == 3)
+		{
+			/* Multiplication ici */
+		}
+		else if (choice == 4)
+		{
+			/* Division ici */
+		}
+		else
+		{
+			printf("Invalid choice\n");
 		}
 	}
 
