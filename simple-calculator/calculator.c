@@ -9,7 +9,7 @@ int main(void)
 {
 	int choice;
 
-	while
+	while(1)
 	{
 		printf("1) Add\n");
 		printf("2) Subtract\n");
