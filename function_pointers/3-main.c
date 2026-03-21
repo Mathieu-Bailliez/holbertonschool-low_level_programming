@@ -2,17 +2,10 @@
 #include <stdlib.h>
 #include "3-calc.h"
 
-/**
- * main - calculator
- * @argc: argument count
- * @argv: argument vector
- *
- * Return: result or error
- */
 int main(int argc, char *argv[])
 {
-	int a, b;
-	int (*f)(int, int);
+	int a, b, result;
+	int (*op_func)(int, int);
 
 	if (argc != 4)
 	{
@@ -20,15 +13,16 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	f = get_op_func(argv[2]);
-	if (f == NULL)
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+
+	op_func = get_op_func(argv[2]);
+
+	if (op_func == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
 
 	if ((argv[2][0] == '/' || argv[2][0] == '%') && b == 0)
 	{
@@ -36,6 +30,8 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	printf("%d\n", f(a, b));
+	result = op_func(a, b);
+	printf("%d\n", result);
+
 	return (0);
 }
