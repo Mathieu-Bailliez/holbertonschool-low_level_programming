@@ -8,6 +8,10 @@
 int main(void)
 {
 	int choice;
+	int 
+	int add = (int A + int B);
+	int mult = ( int A * int B);
+	int div = ( int A / int B);
 
 	while(1)
 	{
@@ -23,11 +27,10 @@ int main(void)
 		if (choice == 0)
 		{
 			printf("Bye!\n");
-			break;
 		}
 		else if (choice == 1)
 		{
-			/* addition ici */
+			return (A + B)
 		}
 		else if (choice == 2)
 		{
