@@ -1,2 +1,2 @@
 # holbertonschool-low_level_programming
-ALl Project Holberton School
+This is ALL the holberton school project for learning the C Langage
