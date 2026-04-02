@@ -1,0 +1,14 @@
+#ifndef VARIADIC_FUNCTIONS_H
+#define VARIADIC_FUNCTIONS_H
+
+#include <stdarg.h>
+
+/**
+ * sum_them_all - returns the sum of all parameters
+ * @n: number of arguments
+ *
+ * Return: sum of all parameters
+ */
+int sum_them_all(const unsigned int n, ...);
+
+#endif /* VARIADIC_FUNCTIONS_H */
